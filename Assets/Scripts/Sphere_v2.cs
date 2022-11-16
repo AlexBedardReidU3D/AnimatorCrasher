@@ -29,7 +29,7 @@ public class Sphere_v2 : MonoBehaviour
         
         if (Random.value > 0.5f)
         {
-            ToggleCube();
+            ToggleAttachedObject();
         }
     }
 
@@ -41,7 +41,7 @@ public class Sphere_v2 : MonoBehaviour
         
         if (_pauseTimer >= _pauseTime)
         {
-            ToggleCube();
+            ToggleAttachedObject();
             _pauseTime = Random.Range(pauseTimeRange.x, pauseTimeRange.y);
             _pauseTimer = 0f;
         }
@@ -51,7 +51,7 @@ public class Sphere_v2 : MonoBehaviour
         animator.Update(Time.deltaTime);
     }
 
-    private void ToggleCube()
+    private void ToggleAttachedObject()
     {
         if (_active == false)
         {
@@ -80,7 +80,7 @@ public class Sphere_v2 : MonoBehaviour
         if (_active && cubeGameObject == null)
         {
             _active = false;
-            return;
+            ToggleAttachedObject();
         }
         
         animator.SetIKPositionWeight(AvatarIKGoal.LeftHand,1);

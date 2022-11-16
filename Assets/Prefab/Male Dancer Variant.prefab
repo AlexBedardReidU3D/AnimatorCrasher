@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8298061355093307124}
-  cubeObjectPrefab: {fileID: 4281215454160790874, guid: 33bde2f6ad279a14b9e21fd3d082632b,
+  cubeObjectPrefab: {fileID: 6880347215440566014, guid: ae4f1bfb56cb72643929bd460e4f095b,
     type: 3}
   pauseTimeRange: {x: 0.5, y: 1.5}
 --- !u!1001 &4004948443506007594
