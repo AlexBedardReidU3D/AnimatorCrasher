@@ -152,8 +152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spherePrefab: {fileID: 8298061355083816116, guid: d68e6fe1288ba854ba34699937a31b59,
     type: 3}
-  widthCount: 25
-  heightCount: 25
+  widthCount: 40
+  heightCount: 40
   useRandomDelete: 1
   randomDeleteDelayMin: 0.5
   randomDeleteDelayMax: 1

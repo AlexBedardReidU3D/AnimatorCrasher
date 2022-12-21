@@ -16,12 +16,13 @@ public class AddOnMechanim : MonoBehaviour
 
     private void OnAnimatorIK()
     {
-        animator.SetIKPositionWeight(AvatarIKGoal.LeftHand,1);
+        Debug.Log("Called");
+        /*animator.SetIKPositionWeight(AvatarIKGoal.LeftHand,1);
         animator.SetIKRotationWeight(AvatarIKGoal.LeftHand,1);  
         animator.SetIKPosition(AvatarIKGoal.LeftHand,parentTransform.position);
         animator.SetIKRotation(AvatarIKGoal.LeftHand,parentTransform.rotation);
         
         animator.SetLookAtWeight(1f);
-        animator.SetLookAtPosition(parentTransform.position);
+        animator.SetLookAtPosition(parentTransform.position);*/
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &9007626038558681419
+--- !u!114 &3735682061103524282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8298061355083816116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec53fb9bc561a394cb59944252a1c72b, type: 3}
+  m_Script: {fileID: 11500000, guid: 76d7b0c4c2ab2d3429e5729b2e0e8574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 8298061355093307124}
-  cubeObjectPrefab: {fileID: 6880347215440566014, guid: ae4f1bfb56cb72643929bd460e4f095b,
-    type: 3}
-  pauseTimeRange: {x: 0.5, y: 1.5}
+  prefab: {fileID: 4796933103128627928, guid: 11cc539a0cf2e3d44996f2168b673e82, type: 3}
 --- !u!1001 &4004948443506007594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98,12 +95,6 @@ PrefabInstance:
 --- !u!1 &8298061355083816116 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4953059869701112478, guid: 630473ebaa90c4640be1d22a41685dec,
-    type: 3}
-  m_PrefabInstance: {fileID: 4004948443506007594}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8298061355093307124 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 4953059869693735134, guid: 630473ebaa90c4640be1d22a41685dec,
     type: 3}
   m_PrefabInstance: {fileID: 4004948443506007594}
   m_PrefabAsset: {fileID: 0}
