@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RandomChild : RandomElement
 {
@@ -10,7 +8,11 @@ public class RandomChild : RandomElement
     public void SetAttachment(in Transform attachTransform)
     {
         m_Attached = attachTransform;
-        transform.SetParent(m_Attached, false);
+        
+        if (attachTransform == null)
+            transform.parent = null;
+        else
+            transform.SetParent(m_Attached, false);
     }
 
     // Update is called once per frame
