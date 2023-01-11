@@ -2,6 +2,9 @@
 
 public class RandomChild : RandomElement
 {
+    private static bool _containerCreated;
+    private static Transform parentContainerTransform;
+    
     private Transform m_Attached;
     
     // Start is called before the first frame update
@@ -9,10 +12,19 @@ public class RandomChild : RandomElement
     {
         m_Attached = attachTransform;
         
-        if (attachTransform == null)
-            transform.parent = null;
-        else
-            transform.SetParent(m_Attached, false);
+        transform.SetParent(m_Attached, false);
+    }
+
+    public void UnParent()
+    {
+        if (_containerCreated == false)
+        {
+            parentContainerTransform = new GameObject("Container").transform;
+            parentContainerTransform.SetSiblingIndex(0);
+            _containerCreated = true;
+        }
+
+        SetAttachment(parentContainerTransform);
     }
 
     // Update is called once per frame

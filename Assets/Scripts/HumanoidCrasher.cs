@@ -80,7 +80,7 @@ public class HumanoidCrasher : MonoBehaviour
 
         if (m_AttachedToBone)
         {
-            attachedRandomChild.SetAttachment(null);
+            attachedRandomChild.UnParent();
             m_AttachedToBone = false;
         }
         else
